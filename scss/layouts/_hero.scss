@@ -1,0 +1,228 @@
+.hero-section {
+  // width: 0;
+  // height: 0;
+  padding-block: 20px 18px;
+  background-color: #2a8086;
+}
+
+.hero__img-desktop {
+  display: none;
+}
+
+.hero__wrapper {
+  width: 290px;
+}
+
+.hero__title {
+  color: #f3f7f8;
+  font-size: 28px;
+  font-weight: 300;
+  margin-block: 0 18px;
+}
+
+.hero_title-span {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.hero__text {
+  color: #f3f7f8;
+  margin-block: 0 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.hero__list {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.hero__item-link {
+  display: inline-block;
+  color: #0d444d;
+  font-family: "Roboto Mono";
+  font-size: 10px;
+  font-weight: 400;
+  padding: 12px 30px 10px 29px;
+  letter-spacing: -0.7px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 2px 50px 0px #b9d5d999;
+}
+
+.hero-link {
+  padding: 12px 40px 10px 41px;
+  background-color: #c5e1e5;
+}
+
+@media only screen and (max-width: 785px) and (min-width: 560px) {
+  
+  // .hero-section {
+    //   color: #2a8086;
+    //   // width: 800px;
+    //   height: 765px;
+    //   background-image: url(../../images/tabletbacgraund.svg), url(../../images/tabletbacgraundimg.svg);
+    //   background-size: 778px, 790px;
+    //   background-repeat: no-repeat;
+    // }
+    
+    // .hero {
+      //   color: #2a8086;
+      // }
+      
+      .hero__img {
+        display: flex;
+        margin-left: auto;
+      }
+      
+      .hero__img-desktop {
+        display: none;
+      }
+      
+      .hero__wrapper {
+        position: relative;
+        width: 324px;
+        margin-top: 30px;
+        // bottom: 200px;
+      }
+      
+      .hero__title {
+        position: absolute;
+        bottom: 125px;
+        font-size: 30px;
+      }
+      
+      .hero_title-span {
+        font-size: 36px;
+      }
+      
+      .hero__text {
+        position: absolute;
+        bottom: 55px;
+        font-weight: 400;
+      }
+      
+      .hero__list {
+        position: relative;
+        bottom: 30px;
+        // bottom: 200px;
+      }
+      
+      .hero__item-link {
+        font-size: 14px;
+      }
+    }
+    
+    @media only screen and (max-width: 1536px) and (min-width: 785px) {
+      .hero__img {
+        display: none;
+      }
+      
+      .hero__img-desktop {
+        display: flex;
+        width: 360px;
+        height: 300px;
+        margin-top: 46px;
+        margin-left: auto;
+      }
+      
+      .hero__wrapper {
+        position: relative;
+        width: 432px;
+      }
+      
+      .hero__title {
+        position: absolute;
+        bottom: 130px;
+        font-size: 48px;
+      }
+      
+      .hero_title-span {
+        font-size: 43px;
+      }
+      
+      .hero__text {
+        position: absolute;
+        bottom: 40px;
+        font-size: 14px;
+      }
+      
+      .hero__item-link {
+        display: inline-block;
+        color: #0d444d;
+        font-family: "Roboto Mono";
+        padding: 14px 84px;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.9px;
+        text-transform: uppercase;
+      }
+      
+      .hero-link {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 1100px) and (min-width: 886px) {
+      .hero__img-desktop {
+        width: 450px;
+        height: 350px;
+      }
+
+      .hero__wrapper {
+        position: relative;
+        width: 480px;
+      }
+
+      .hero__title {
+        position: absolute;
+        bottom: 215px;
+        font-size: 48px;
+      }
+
+      .hero_title-span {
+        font-size: 45px;
+      }
+
+      .hero__text {
+        position: absolute;
+        bottom: 120px;
+        font-size: 16px;
+      }
+
+      .hero__item-link {
+        position: absolute;
+        bottom: 100px;
+      }
+    }
+
+    @media only screen and (max-width: 1536px) and (min-width: 1101px) {
+      .hero__img-desktop {
+        width: 560px;
+        height: 464px;
+      }
+
+      .hero__wrapper {
+        position: relative;
+        width: 433px;
+      }
+
+      .hero__title {
+        position: absolute;
+        bottom: 315px;
+      }
+
+      .hero__text {
+        position: absolute;
+        bottom: 230px;
+      }
+
+      .hero__item-link {
+        position: absolute;
+        bottom: 100px;
+      }
+    }
