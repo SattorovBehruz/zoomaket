@@ -1,0 +1,123 @@
+.animals-section {
+  margin-top: 41px;
+}
+
+.animals__title {
+  color: #0d444d;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.animals__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+}
+
+.animals__text {
+  color: #2d2d2d;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.animals__item-lemur {
+  position: relative;
+}
+
+.animals__item-lemur::before {
+  position: absolute;
+  top: 95px;
+  left: -40px;
+  content: "";
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background-image: url(../../images/mobilnebuttonstrilka.svg);
+}
+
+@media only screen and (max-width: 559px) and (min-width: 421px) {
+  .animals__item-lemur::before {
+    position: absolute;
+    top: 90px;
+    left: -107px;
+  }
+}
+
+@media only screen and (max-width: 785px) and (min-width: 555px) {
+  .animas__item-elephent {
+    display: none;
+  }
+
+  .animals__item-lemur {
+    display: none;
+  }
+
+  .animals__item-aligator {
+    position: relative;
+  }
+
+  .animals__item-aligator::before {
+    position: absolute;
+    top: 20px;
+    right: -83px;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-image: url(../../images/mobilerightstrilka.svg);
+    background-repeat: no-repeat;
+  }
+
+  .animals__item-aligator::after {
+    position: absolute;
+    top: 70px;
+    right: -82px;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-image: url(../../images/mobileleftstrilka.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 825px) and (min-width: 785px) {
+  .animals__item-lemur {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1536px) and (min-width: 825px) {
+
+  .animals__list {
+    justify-content: space-between;
+  }
+
+  .animals__item-lemur::before {
+    position: absolute;
+    top: 16px;
+    left: 128px;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-image: url(../../images/mobilerightstrilka.svg);
+    background-repeat: no-repeat;
+  }
+
+  .animals__item-lemur::after {
+    position: absolute;
+    top: 60px;
+    right: -65px;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-image: url(../../images/mobileleftstrilka.svg);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,170 @@
+.testimon-section {
+  margin-top: 32px;
+}
+
+.testimon__title {
+  color: #0d444d;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.testimon__item {
+  position: relative;
+  width: 300px;
+  height: 230px;
+  fill: #fff;
+  filter: drop-shadow(0px 2px 30px #0000000f);
+  background-image: url(../../images/mobilemessage.png);
+  background-repeat: no-repeat;
+}
+
+.testimon__item::before {
+  position: absolute;
+  top: 173px;
+  left: 27px;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/mobileadam.png);
+}
+
+.testimon__item:nth-child(2)::before {
+  background-image: url(../../images/mobilechrist.png);
+}
+
+.testimon__item:nth-child(3)::before {
+  background-image: url(../../images/mobileamely.png);
+}
+
+.testimon__time {
+  position: absolute;
+  top: 45px;
+  left: 25px;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.testimon__text-box {
+  position: relative;
+  right: -19px;
+}
+
+.testimon__text {
+  position: absolute;
+  top: 70px;
+  color: #2d2d2d;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.testimon__desk {
+  position: absolute;
+  top: 170px;
+  left: 60px;
+}
+
+.feedback__text {
+  display: inline-block;
+  color: #19707d;
+  font-family: "Roboto Mono";
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  padding: 11px 65px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: 1px solid #19707d;
+}
+
+.feedback__text::before {
+  position: absolute;
+  left: 45px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/message.svg);
+}
+
+@media only screen and (max-width: 785px) and (min-width: 560px) {
+  .testimon__list {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .testimon__item:nth-child(3) {
+    display: none;
+  }
+  
+  .testimon__text-box {
+    width: 243px;
+  }
+
+  .feedback__text {
+    position: absolute;
+    right: -25px;
+    bottom: -2145px;
+  }
+
+  .feedback__text::before {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 785px) and (min-width: 630px) {
+  .feedback__text {
+    position: absolute;
+    right: -25px;
+    bottom: -1655px;
+  }
+}
+
+@media only screen and (max-width: 1536px) and (min-width: 785px) {
+  .testimon__list {
+    display: flex;
+    column-gap: 50px;
+  }
+  
+  .testimon__text-box {
+    width: 223px;
+  }
+  
+  .testimon__text {
+    font-size: 16px;
+  }
+
+  .feedback__text {
+    position: absolute;
+    right: -25px;
+    bottom: -2421px;
+  }
+
+  .feedback__text::before {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1536px) and (min-width: 1101px) {
+  .feedback__text {
+    position: absolute;
+    right: 10px;
+    bottom: -2545px;
+  }
+}
+
+@media only screen and (max-width: 1536px) and (min-width: 1132px) {
+  .feedback__text {
+    position: absolute;
+    right: 150px;
+    bottom: -2160px;
+  }
+}

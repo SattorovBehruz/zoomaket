@@ -10,13 +10,12 @@
   text-transform: uppercase;
 }
 
-.pets__list::after {
-  content: "";
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  background-image: url(../../images/mobilerightstrilka.svg);
-  background-repeat: no-repeat;
+.pets__wrapper {
+  position: relative;
+}
+
+.pets__list {
+  position: relative;
 }
 
 .pets__item {
@@ -49,6 +48,10 @@
   width: 205px;
 }
 
+.pets__item-img-eagles {
+  display: none;
+}
+
 .pets__item-eagles {
   display: none;
 }
@@ -71,6 +74,10 @@
   background-repeat: no-repeat;
 }
 
+.pets__item-title-eagles {
+  display: none;
+}
+
 .pets__item-text {
   color: #909090;
   margin-block: 0 11px;
@@ -78,34 +85,446 @@
   font-weight: 400;
 }
 
-@media only screen and (max-width: 559px) and (min-width: 310px) {
+.pets__item-text-eagles {
+  display: none;
+}
 
+.pets__item-lemur {
+  display: none;
+}
+
+.text {
+  display: inline-block;
+  color: #19707d;
+  font-family: "Roboto Mono";
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 43px;
+  padding: 10px 22px 9px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: 1px solid  #19707d;
+}
+
+.text::before {
+  position: relative;
+  top: 6px;
+  left: -10px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/love.svg);
+  background-repeat: no-repeat;
+}
+
+.tablet__text {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) and (min-width: 285px) {
+  
+  .pets__item-text {
+    padding-bottom: 12px;
+  }
+  
   .pets__item {
-    margin-inline: auto;
+    position: relative;
+  }
+  
+  .pets__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pets__item-after::after {
+    position: absolute;
+    right: -70px;
+    bottom: 280px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/mobilerightstrilka.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .pets__item-panda-after::after {
+    position: absolute;
+    right: -70px;
+    top: 295px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/mobileleftstrilka.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .pets__item-lemur {
+    display: none;
+  }
+  
+  .pets__item-gorilla {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 785px) and (min-width: 560px) {
 
-    .pets__list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      column-gap: 50px;
-      flex-wrap: wrap;
-    }
+@media only screen and (max-width: 559px) and (min-width: 310px) {
+  
+  .pets__item {
+    margin-inline: auto;
+  }
+  
+  .pets__item-lemur {
+    display: none;
+  }
+  
+  .text {
+    font-size: 12px;
+  }
+}
 
-    .pets__item {
-      padding-inline: 43px;
-    }
-
-    .pets__item-text {
-      margin-bottom: 14px;
-    }
-
-  .pets__item-eagles {
-    position: relative;
-    right: -50px;
+@media only screen and (max-width: 784px) and (min-width: 561px) {
+  
+  .pets__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .pets__item {
+    padding-inline: 43px;
+  }
+  
+  .pets__item-lemur {
+    display: none;
+  }
+  
+  .pets__item-gorilla {
+    display: none;
+  }
+  
+  .pets__item-monkey-img {
+    display: none;
+  }
+  
+  .pets__item-img-eagles {
+    display: flex;
+  }
+  
+  .pets__item-title-panda {
+    display: none;
+  }
+  
+  .pets__item-title-eagles {
     display: block;
   }
+  
+  .pets__item-text {
+    margin-bottom: 14px;
+  }
+  
+  .pets__item-text-panda {
+    display: none;
+  }
+  
+  .pets__item-text-eagles {
+    display: block;
+  }
+  
+  .pets__item-eagles {
+    position: relative;
+    right: 1px;
+    display: block;
+  }
+  
+  .pets__item-after {
+    position: relative;
+    bottom: 9px;
+  }
+  
+  .pets__item-after::after {
+    position: absolute;
+    right: -68px;
+    bottom: -15px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/mobilerightstrilka.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .pets__item-eagles-after::after {
+    position: absolute;
+    right: -70px;
+    top: 15px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/mobileleftstrilka.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .text {
+    display: none;
+  }
+  
+  .tablet-text-box {
+    position: relative;
+  }
+  
+  .tablet__text {
+    position: absolute;
+    right: 1px;
+    bottom: -14px;
+    display: inline-block;
+    color: #19707d;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 12px 22px 9px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1.5px solid #19707d;
+  }
+  
+  .tablet__text::before {
+    position: relative;
+    top: 5px;
+    left: -4px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/love.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 630px) and (min-width: 561px) {
+  
+  .pets__item {
+    position: relative;
+  }
+  
+  .pets__item-lemur {
+    display: none;
+  }
+  
+  .pets__item-after::after {
+    position: absolute;
+    right: -70px;
+    top: -63px;
+  }
+  
+  .pets__item-eagles-after::after {
+    position: absolute;
+    top: -570px;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  
+  .tablet__text {
+    position: relative;
+  }
+  
+  .tablet-text-box {
+    position: relative;
+  }
+  
+  .tablet__text {
+    position: absolute;
+    right: 1px;
+    bottom: -7px;
+  }
+  
+}
+
+@media only screen and (min-width: 785px) {
+  .pets__item-eagles-after::after {
+    position: absolute;
+    left: 315px;
+  }
+  
+  .pets__item-lemur {
+    display: none;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1536px) and (min-width: 785px) {
+
+  .tablet-text-box {
+    position: absolute;
+    right: 1px;
+    bottom: 900px;
+  }
+
+  .tablet__text {
+    position: relative;
+    top: 290px;
+    right: 1px;
+    display: inline-block;
+    color: #19707d;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 20px 10px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1.5px solid #19707d;
+  }
+
+  .tablet__text::before {
+    position: relative;
+    top: 5px;
+    left: -4px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/love.svg);
+    background-repeat: no-repeat;
+  }
+
+  .pets__wrapper {
+    margin-top: 50px;
+  }
+  
+  .pets__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18px;
+  }
+  
+  .pets__item {
+    width: 352px;
+    height: 273px;
+  }
+  
+  .pets__item-img {
+    margin-inline: auto;
+  }
+  
+  .pets__item-eagles {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  
+  .pets__item-gorilla {
+    position: relative;
+  }
+  
+  .pets__item-gorilla::after {
+    position: absolute;
+    right: -60px;
+    bottom: -20px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/mobilerightstrilka.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .pets__item-lemur {
+    position: relative;
+  }
+  
+  .pets__item-lemur::after {
+    position: absolute;
+    right: -60px;
+    top: 10px;
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url(../../images/mobileleftstrilka.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .pets__item-title-panda {
+    display: none;
+  }
+  
+  .pets__item-title-eagles {
+    display: block;
+  }
+  
+  .pets__item-text-panda {
+    display: none;
+  }
+  
+  .pets__item-text-eagles {
+    display: block;
+  }
+  
+  .pets__item-gorilla {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pets__item-lemur {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  
+  .pets__item-monkey-img {
+    display: none;
+  }
+  
+  .pets__item-img-eagles {
+    display: flex;
+  }
+  
+  .pets__item::before {
+    position: relative;
+    top: 220px;
+    right: -250px;
+  }
+  
+  .text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1136px) and (min-width: 785px) {
+  .pets__item-gorilla::after {
+    position: absolute;
+    right: -435px;
+    bottom: 1px;
+  }
+
+  .tablet-text-box {
+    position: absolute;
+    top: -310px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1536px) and (min-width: 1132px) {
+  .pets__item-gorilla::after {
+    position: absolute;
+    right: -64px;
+    bottom: 1px;
+  }  
 }
